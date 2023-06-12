@@ -1,0 +1,171 @@
+{
+  "client": "Thunder Client",
+  "collectionName": "my wallet local",
+  "dateExported": "2022-12-28T17:11:27.547Z",
+  "version": "1.1",
+  "folders": [
+    {
+      "_id": "e254105f-4b12-40c2-884b-873b9b8889a7",
+      "name": "auth",
+      "containerId": "",
+      "created": "2022-12-25T19:13:51.084Z",
+      "sortNum": 10000
+    },
+    {
+      "_id": "24d3c31e-4e35-4874-a4cb-9f2dd023409f",
+      "name": "wage_income",
+      "containerId": "",
+      "created": "2022-12-28T16:15:30.156Z",
+      "sortNum": 20000
+    },
+    {
+      "_id": "f792596b-456c-418b-8255-e9ad63c0875d",
+      "name": "budget",
+      "containerId": "",
+      "created": "2022-12-28T16:20:41.611Z",
+      "sortNum": 30000
+    }
+  ],
+  "requests": [
+    {
+      "_id": "f0000049-7638-4097-b5ef-2c9fb1f24c65",
+      "colId": "737c3271-95a6-487b-9b56-fe30a50a9152",
+      "containerId": "e254105f-4b12-40c2-884b-873b9b8889a7",
+      "name": "inscription",
+      "url": "{{localhost}}/authentication/signup",
+      "method": "POST",
+      "sortNum": 10000,
+      "created": "2022-12-25T19:14:01.522Z",
+      "modified": "2022-12-28T16:14:11.871Z",
+      "headers": [],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"password\":\"1234\",\n  \"username\":\"test\",\n  \"first_name\":\"oussema\",\n  \"last_name\":\"trabelsi\",\n  \"email\":\"ousema@test.tn\"\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "c582c835-3483-4cdc-aed7-06dc54b5adbf",
+      "colId": "737c3271-95a6-487b-9b56-fe30a50a9152",
+      "containerId": "e254105f-4b12-40c2-884b-873b9b8889a7",
+      "name": "login",
+      "url": "{{localhost}}/authentication/token/get",
+      "method": "POST",
+      "sortNum": 20000,
+      "created": "2022-12-25T19:23:26.897Z",
+      "modified": "2022-12-28T16:14:42.728Z",
+      "headers": [],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"password\":\"1234\",\n  \"username\":\"test\"\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "2a9b0d5e-7059-448a-b48e-1c56a9a458db",
+      "colId": "737c3271-95a6-487b-9b56-fe30a50a9152",
+      "containerId": "e254105f-4b12-40c2-884b-873b9b8889a7",
+      "name": "account",
+      "url": "authentication/account",
+      "method": "GET",
+      "sortNum": 30000,
+      "created": "2022-12-25T19:25:05.011Z",
+      "modified": "2022-12-28T16:22:08.279Z",
+      "headers": [],
+      "params": [],
+      "auth": {
+        "type": "bearer",
+        "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjcyNDE2ODgyLCJpYXQiOjE2NzIyNDQwODIsImp0aSI6ImY2ODE3YTlkNTJiODQyODI4NGU5ZWYxNmVmMjRkYjU1IiwidXNlcl9pZCI6MX0.-1XoxWcL3h1doA9j1Ga81LJdq6ONu_ox9iktYF5yfag"
+      },
+      "tests": []
+    },
+    {
+      "_id": "cc40365a-0feb-4e53-b52b-30fa632b51ed",
+      "colId": "737c3271-95a6-487b-9b56-fe30a50a9152",
+      "containerId": "24d3c31e-4e35-4874-a4cb-9f2dd023409f",
+      "name": "post",
+      "url": "/wageandincome",
+      "method": "POST",
+      "sortNum": 40000,
+      "created": "2022-12-28T16:15:47.816Z",
+      "modified": "2022-12-28T16:29:12.961Z",
+      "headers": [],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n    \"title\":\"wage2\",\n    \"description\":\"desc2\",\n    \"amount\":200,\n    \"type\":false\n}",
+        "form": []
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjcyNDE2ODgyLCJpYXQiOjE2NzIyNDQwODIsImp0aSI6ImY2ODE3YTlkNTJiODQyODI4NGU5ZWYxNmVmMjRkYjU1IiwidXNlcl9pZCI6MX0.-1XoxWcL3h1doA9j1Ga81LJdq6ONu_ox9iktYF5yfag"
+      },
+      "tests": []
+    },
+    {
+      "_id": "64197afa-81cd-4f56-a849-1632b82ef2fe",
+      "colId": "737c3271-95a6-487b-9b56-fe30a50a9152",
+      "containerId": "f792596b-456c-418b-8255-e9ad63c0875d",
+      "name": "post",
+      "url": "/budget",
+      "method": "POST",
+      "sortNum": 50000,
+      "created": "2022-12-28T16:20:49.455Z",
+      "modified": "2022-12-28T16:27:18.196Z",
+      "headers": [],
+      "params": [],
+      "body": { "type": "json", "raw": "{\n  \"amount\":100\n}", "form": [] },
+      "tests": []
+    },
+    {
+      "_id": "d0d34538-c2d4-4164-9d18-d825a2217c7a",
+      "colId": "737c3271-95a6-487b-9b56-fe30a50a9152",
+      "containerId": "24d3c31e-4e35-4874-a4cb-9f2dd023409f",
+      "name": "get",
+      "url": "/wageandincome",
+      "method": "GET",
+      "sortNum": 50000,
+      "created": "2022-12-28T16:30:19.872Z",
+      "modified": "2022-12-28T16:30:29.786Z",
+      "headers": [],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n    \"title\":\"wage2\",\n    \"description\":\"desc2\",\n    \"amount\":200,\n    \"type\":false\n}",
+        "form": []
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjcyNDE2ODgyLCJpYXQiOjE2NzIyNDQwODIsImp0aSI6ImY2ODE3YTlkNTJiODQyODI4NGU5ZWYxNmVmMjRkYjU1IiwidXNlcl9pZCI6MX0.-1XoxWcL3h1doA9j1Ga81LJdq6ONu_ox9iktYF5yfag"
+      },
+      "tests": []
+    },
+    {
+      "_id": "95fa9f5c-e34b-4504-b2fa-8953170beb76",
+      "colId": "737c3271-95a6-487b-9b56-fe30a50a9152",
+      "containerId": "f792596b-456c-418b-8255-e9ad63c0875d",
+      "name": "get",
+      "url": "/budget",
+      "method": "GET",
+      "sortNum": 60000,
+      "created": "2022-12-28T16:27:49.568Z",
+      "modified": "2022-12-28T16:28:11.994Z",
+      "headers": [],
+      "params": [],
+      "tests": []
+    }
+  ],
+  "settings": {
+    "headers": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjcyNDE2ODgyLCJpYXQiOjE2NzIyNDQwODIsImp0aSI6ImY2ODE3YTlkNTJiODQyODI4NGU5ZWYxNmVmMjRkYjU1IiwidXNlcl9pZCI6MX0.-1XoxWcL3h1doA9j1Ga81LJdq6ONu_ox9iktYF5yfag"
+    },
+    "tests": [],
+    "options": { "baseUrl": "http://127.0.0.1:8000" }
+  }
+}

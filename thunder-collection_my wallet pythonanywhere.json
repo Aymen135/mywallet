@@ -1,0 +1,159 @@
+{
+  "client": "Thunder Client",
+  "collectionName": "my wallet pythonanywhere",
+  "dateExported": "2022-12-28T17:11:47.885Z",
+  "version": "1.1",
+  "folders": [
+    {
+      "_id": "68ef89c9-9d4c-4add-971f-4c1fbce040e4",
+      "name": "auth",
+      "containerId": "",
+      "created": "2022-12-28T16:34:40.352Z",
+      "sortNum": 10000
+    },
+    {
+      "_id": "a9399dea-54f7-4181-9402-0fde8bebaf50",
+      "name": "wage_income",
+      "containerId": "",
+      "created": "2022-12-28T16:34:40.353Z",
+      "sortNum": 20000
+    },
+    {
+      "_id": "a83ee575-4ca1-4ac3-93f1-457ba4c22ef9",
+      "name": "budget",
+      "containerId": "",
+      "created": "2022-12-28T16:34:40.354Z",
+      "sortNum": 30000
+    }
+  ],
+  "requests": [
+    {
+      "_id": "e9045729-b032-4800-80b3-76e686337707",
+      "colId": "8f1b2a25-b295-4f33-bf94-8bb6672eb893",
+      "containerId": "68ef89c9-9d4c-4add-971f-4c1fbce040e4",
+      "name": "inscription",
+      "url": "/authentication/signup",
+      "method": "POST",
+      "sortNum": 10000,
+      "created": "2022-12-28T16:34:40.353Z",
+      "modified": "2022-12-28T16:37:44.310Z",
+      "headers": [],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"password\":\"1234\",\n  \"username\":\"test\",\n  \"first_name\":\"oussema\",\n  \"last_name\":\"trabelsi\",\n  \"email\":\"ousema@test.tn\"\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "b7b77764-b963-4f90-be15-b091766b00ed",
+      "colId": "8f1b2a25-b295-4f33-bf94-8bb6672eb893",
+      "containerId": "68ef89c9-9d4c-4add-971f-4c1fbce040e4",
+      "name": "login",
+      "url": "/authentication/token/get",
+      "method": "POST",
+      "sortNum": 20000,
+      "created": "2022-12-28T16:34:40.354Z",
+      "modified": "2022-12-28T16:36:32.881Z",
+      "headers": [],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"password\":\"1234\",\n  \"username\":\"test\"\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "e1a11b45-d3c8-4bb0-8303-39027a914e10",
+      "colId": "8f1b2a25-b295-4f33-bf94-8bb6672eb893",
+      "containerId": "68ef89c9-9d4c-4add-971f-4c1fbce040e4",
+      "name": "account",
+      "url": "/authentication/account",
+      "method": "GET",
+      "sortNum": 30000,
+      "created": "2022-12-28T16:34:40.355Z",
+      "modified": "2022-12-28T16:38:38.841Z",
+      "headers": [],
+      "params": [],
+      "tests": []
+    },
+    {
+      "_id": "601049c9-2025-4f88-b31b-54483eb179a1",
+      "colId": "8f1b2a25-b295-4f33-bf94-8bb6672eb893",
+      "containerId": "a9399dea-54f7-4181-9402-0fde8bebaf50",
+      "name": "post",
+      "url": "/wageandincome",
+      "method": "POST",
+      "sortNum": 40000,
+      "created": "2022-12-28T16:34:40.356Z",
+      "modified": "2022-12-28T16:59:34.017Z",
+      "headers": [],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n    \"title\":\"inc12\",\n    \"description\":\"desc12\",\n    \"amount\":50,\n    \"type\":false\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "84ebb636-1d37-4bf4-b70e-5433ca8bc894",
+      "colId": "8f1b2a25-b295-4f33-bf94-8bb6672eb893",
+      "containerId": "a83ee575-4ca1-4ac3-93f1-457ba4c22ef9",
+      "name": "post",
+      "url": "/budget",
+      "method": "POST",
+      "sortNum": 50000,
+      "created": "2022-12-28T16:34:40.357Z",
+      "modified": "2022-12-28T16:34:40.357Z",
+      "headers": [],
+      "params": [],
+      "body": { "type": "json", "raw": "{\n  \"amount\":100\n}", "form": [] },
+      "tests": []
+    },
+    {
+      "_id": "5b839c99-5109-4ff5-a7e5-b067306a6d08",
+      "colId": "8f1b2a25-b295-4f33-bf94-8bb6672eb893",
+      "containerId": "a9399dea-54f7-4181-9402-0fde8bebaf50",
+      "name": "get",
+      "url": "/wageandincome",
+      "method": "GET",
+      "sortNum": 50000,
+      "created": "2022-12-28T16:34:40.358Z",
+      "modified": "2022-12-28T16:42:29.593Z",
+      "headers": [],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n    \"title\":\"wage2\",\n    \"description\":\"desc2\",\n    \"amount\":200,\n    \"type\":false\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "d223cea3-4a5f-4771-8882-d479031c366a",
+      "colId": "8f1b2a25-b295-4f33-bf94-8bb6672eb893",
+      "containerId": "a83ee575-4ca1-4ac3-93f1-457ba4c22ef9",
+      "name": "get",
+      "url": "/budget",
+      "method": "GET",
+      "sortNum": 60000,
+      "created": "2022-12-28T16:34:40.360Z",
+      "modified": "2022-12-28T16:34:40.360Z",
+      "headers": [],
+      "params": [],
+      "tests": []
+    }
+  ],
+  "settings": {
+    "headers": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjcyNDE4Mjc0LCJpYXQiOjE2NzIyNDU0NzQsImp0aSI6IjAyZGVmMmVlYjhkZDQzZDliNjdlNmJiMzllNmJmMmUzIiwidXNlcl9pZCI6Mn0.yghEn-W0J5jZXQmC_nmtXIvI2XuJqnevcOvlII0xTJ4"
+    },
+    "tests": [],
+    "options": { "baseUrl": "https://ous3ma.pythonanywhere.com" }
+  }
+}
